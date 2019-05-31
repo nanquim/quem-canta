@@ -1,0 +1,57 @@
+{{> header}}
+<div class="container">
+        <div class="row" id="corpo">
+            <div class="col-sm-12 col-md-12 col-lg-12" id="titulo">Quem me canta?</div>
+            {{#srcMeme}}
+                <audio id="aMeme" autoplay src="{{srcMeme}}"></audio>
+            {{/srcMeme}}
+            {{^comecou}}
+            {{^fim}}
+                <div class="col-sm-12 col-md-12 col-lg-12" id="inicio">
+                    <form action="/jogar">
+                        <input type="submit" value="Jogar!" id="btnJogar"/>
+                    </form>
+                </div>
+                {{> logos}}
+                {{/fim}}
+                {{/comecou}}
+                {{^fim}}
+                {{#comecou}}
+                <div class="col-sm-12 col-md-12 col-lg-12" id="jogo">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="wp-players">
+                                <img id="playerPrincipal" src="./images/play.png" alt="play-icon">
+                                <!-- TODO Usar msm el -->
+                                <audio id="aFilhao" autoplay src="{{srcMusica}}"></audio>
+                                {{#musicas.0}}
+                                    <audio id="aMusica" hidden src="{{linkAudioPreview}}"></audio>
+                                {{/musicas.0}}
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="wp-respostas">
+                                {{#musicas.1}}
+                                {{#.}}
+                                    <div class="opcao clicavel" onclick="window.open('./rodada?id={{idTrackDeezer}}', '_self');">
+                                        {{titulo}} - {{artista}}
+                                    </div>
+                                {{/.}}
+                                {{/musicas.1}}
+                        </div>
+                    </div> <!-- /row -->
+                </div> <!-- /col -->
+                {{/comecou}}
+                {{/fim}}
+                {{#fim}}
+                <div class="col-sm-12 col-md-12 col-lg-12 clicavel" id="fim">
+                    <div id="wp-fim">
+                        <h1>Fim</h1><br>
+                        <p>Você fez {{pontos}} pontos</p>
+                        <img src="./images/voltar.png" 
+                            onclick="window.open('./jogar', '_self');"
+                            alt="voltar">
+                    </div>
+                </div>
+                {{> logos}}
+                {{/fim}}
+        </div>
+</div>
+{{> footer}}

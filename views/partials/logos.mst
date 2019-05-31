@@ -1,0 +1,15 @@
+        <div class="col-sm-12 col-md-12 col-lg-12" id="footer-icones">
+            <a href="https://developers.deezer.com/api" target="_blank">
+                <img src="./images/logo-deezer.png" alt="deezer-logo">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./images/logo-github.png" alt="gitlab-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/juliana-nascimento-17a373ab/" target="_blank">
+                <img src="./images/logo-linkedin.png" alt="linkedin-logo">
+            </a>
+            {{! TODO botao share (Web Share API) }}
+            {{! <a href="#" target="_blank">
+                <img src="./images/icon-share.png" alt="share-icon">
+            </a> }}
+        </div>

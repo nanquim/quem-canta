@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html, body, .container {
+    width: 100% !important;
+    height: 100%;
+    background-color: bisque !important;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#595959;
+}
+#corpo {
+    width: 70%;
+    height: 95%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: salmon;
+    box-shadow: 10px 10px 8px -1px rgba(235,169,162,1);
+}
+#titulo {
+    font-family: 'Lobster', cursive;
+    font-size: 5vh;
+    margin-top: 5%;
+    text-align: center;
+}
+#inicio{
+    font-size: 3vh;
+    margin-top: 5%;
+    text-align: center;
+}
+#btnJogar,  #btnJogar:hover{
+    background: transparent;
+    border: none;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 6vh;
+}
+#wp-players {
+    margin-top: 15%;
+    text-align: center;
+}
+a, .clicavel{
+    cursor: pointer;
+}
+#wp-respostas{
+    margin-top: 8%;
+}
+.opcao{
+    background-color: #fba69d;
+    text-align: left;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    padding: 4px 0px 4px 4px; 
+    margin-bottom: 5px;
+}
+#wp-fim{
+    margin-top: 8%;
+}
+#fim, #fim > *{
+    font-size: 5vh;
+    text-align: center;
+}
+#footer-icones{
+    position: fixed;
+    bottom: 15%;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+#footer-icones img{
+    max-width: 10%;
+    max-height: 10%;
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #btnJogar,  #btnJogar:hover{
+        background: transparent;
+        border: none;
+        margin-top: 30%;
+        text-align: center;
+        font-size: 6vh;
+    }
+    #footer-icones{
+        position: fixed;
+        bottom: 15%;
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    #footer-icones img{
+        max-width: 10%;
+        max-height: 10%;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    #btnJogar,  #btnJogar:hover{
+        background: transparent;
+        border: none;
+        margin-top: 30%;
+        text-align: center;
+        font-size: 6vh;
+    }
+    #footer-icones{
+        position: fixed;
+        bottom: 15%;
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    #footer-icones img{
+        max-width: 10%;
+        max-height: 10%;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    #btnJogar,  #btnJogar:hover{
+        background: transparent;
+        border: none;
+        margin-top: 20%;
+        text-align: center;
+        font-size: 4vh;
+    }
+    #footer-icones{
+        position: fixed;
+        bottom: 15%;
+        margin-top: 25%;
+        margin-left: 15%;
+    }
+    #footer-icones img{
+        max-width: 10%;
+        max-height: 10%;
+    }
+}
