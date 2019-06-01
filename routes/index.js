@@ -18,10 +18,10 @@ router.get('/rodada', function(req, res, next) {
 
 });
 
-router.get('/fim', function(req, res, next) {
+/* router.get('/fim', function(req, res, next) {
   
   var pontos = 3;
   res.render('index.mst', {"fim": true, "pontos": pontos}); 
-});
+}); */
 
 module.exports = router;
