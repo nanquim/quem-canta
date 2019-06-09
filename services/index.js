@@ -46,7 +46,6 @@ function falaDeezer(){
         .catch((e) => {
             console.log(e);
         });
-
 }
 
 module.exports.falaDeezer = falaDeezer;
