@@ -4,8 +4,7 @@ var aMusicas = [];
 var tempMusica = {};
 
 /* TODO
-   tirar gêneros, estão vindo muito parecidas e às vezes duplicadas
-   ou talvez ter a opçao de escolher por genero/pais
+   ADD Escolha por gênero
 */
 
 function falaDeezer(){
