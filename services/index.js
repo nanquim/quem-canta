@@ -11,12 +11,12 @@ function falaDeezer(){
     
     return rp('https://api.deezer.com/genre')
         
-        .then( (resp) => /** TODO Passar direto sem parsear ??? */ 
+        .then( (resp) =>
         { 
             var generos = JSON.parse(resp);
             var idGenero = generos.data[Math.floor(Math.random() * generos.data.length) + 1].id; 
             
-            return rp('https://api.deezer.com/genre/' + idGenero + '/artists'); /* TODO Template literal */
+            return rp('https://api.deezer.com/genre/' + idGenero + '/artists');
         })
         .then( (resp) =>
         {
@@ -41,8 +41,6 @@ function falaDeezer(){
                 aMusicas.push(tempMusica);
             }
             
-            //console.log('\n\n\nNA PROMISE\n');
-            //console.log('aMusicas: \n' + aMusicas);
             return aMusicas;
         })
         .catch((e) => {
